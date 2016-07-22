@@ -1,0 +1,8 @@
+
+{% for project in site.projects %}
+<div class="c-projects-body__content">
+  <h1 class="c-projects-body__title">{{project.title}}</h1>
+
+  <p class="c-projects-body__desc">{{project.content | remove: '<p>' | remove: '</p>' }}</p>
+</div>
+{% endfor %}

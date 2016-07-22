@@ -1,0 +1,48 @@
+.c-post-item{
+  color: white;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+
+
+  &__header{
+      font-family: $heading-font;
+      color: white;
+      //text-align: center;
+  }
+
+  &__title{
+    font-family: $heading-font;
+    color: white;
+    margin: 0;
+  }
+
+  &__meta{
+    font-family: $body-font;
+    color: $quaternary;
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__exerpt{
+    color: white;
+  }
+
+  &__content{
+    color: white;
+  }
+
+  &__link{
+    color: white;
+    text-decoration: none;
+  }
+
+
+  &:hover{
+    transform: scale(1.01);
+    transition-duration: .2s;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.85);
+  }
+
+}

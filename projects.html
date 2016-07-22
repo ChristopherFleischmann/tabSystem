@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1 class="c-page__title">Projects</h1>
+<div class="c-wrapper__tight">
+  <div class="c-tab--container">
+    <div class="c-tab--header">
+
+      <ul class="c-tab--list">
+        {% for project in site.projects %}
+          <li><a class="c-tab--listitem js-tab-link" href="#" data-project="{{ project.title | downcase | replace: ' ' , '-' }}">{{project.title}}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+    <div class="c-tab--body">
+      {% for project in site.projects %}
+      <div class="c-projects-body__content{% if forloop.first %} is-active{% endif %}" id="{{project.title | downcase | replace: ' ' , '-'}}" >
+        <h1 class="c-projects-body__title">{{project.title}}</h1>
+        <p class="c-projects-body__desc">{{project.content | remove: '<p>' | remove: '</p>' }}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+</div>

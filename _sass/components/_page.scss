@@ -1,0 +1,26 @@
+.c-page-content {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  //padding-bottom: 100px;
+  background-color: $primary;
+
+}
+
+.c-page__title{
+  color: white;
+  text-decoration: none;
+
+}
+
+.c-page__text {
+  color: white;
+  text-decoration: none;
+}
+
+.c-color {
+    background-color: $primary;
+    // max-height: 200px;
+    //padding-bottom: 10vh;
+}
